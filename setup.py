@@ -6,7 +6,7 @@ setup(
     packages=[''],
     # url='https://github.com/ConnorWolanski/TeamFightTacticsBot.git',
     license='',
-    requires=['aenum', 'pyscreenshot', 'pygame', 'pynput'],
+    requires=['aenum', 'pyscreenshot'],
     author='Cody Alexander',
     author_email='csalexander<at>cpp.edu',
     description=''
