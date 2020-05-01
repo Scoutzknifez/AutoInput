@@ -1,4 +1,4 @@
-import AutoInput.Utility.BeeSwarmSimulator as Bss
+import AutoInput.BeeSwarmSimulator.Functions as Bss
 
 
 def start():
