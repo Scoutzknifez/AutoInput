@@ -25,3 +25,7 @@ def do_conversion():
     if BssConstants.converting and BssConstants.loop_count > BssConstants.convert_loop_allowance:
         Utils.press_and_release(Constants.HEX_DICTIONARY['2'], .01)
         BssConstants.loop_count = 0
+
+
+def do_marshmallow():
+    Utils.press_and_release(Constants.HEX_DICTIONARY['5'], .01)
