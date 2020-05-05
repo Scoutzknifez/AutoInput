@@ -8,7 +8,7 @@ import AutoInput.Utility.Utils as Utils
 # 3 - Field Dice
 # 4 - Cloud Vial
 # 5 - Marshmallow Bee (30m Cooldown)
-# 6 - Jellybean
+# 6 - Jellybean (40s Cooldown)
 
 
 def not_afk():
