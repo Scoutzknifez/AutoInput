@@ -1,5 +1,5 @@
 import time
-import AutoInput.BeeSwarmSimulator.Constants as BssConstants
+import AutoInput.BeeSwarmSimulator.Config as BssConstants
 import AutoInput.Utility.Constants as Constants
 import AutoInput.Utility.Utils as Utils
 
@@ -15,7 +15,7 @@ def not_afk():
     time.sleep(3)
 
     while True:
-        Utils.press_and_release(Constants.HEX_DICTIONARY[BssConstants.NOT_AFK_KEY], .05)
+        Utils.press_and_release(Constants.HEX_DICTIONARY[BssConstants.NOT_AFK_KEY], .01)
         BssConstants.loop_count += 1
         do_conversion()
         time.sleep(BssConstants.loop_sleep_time)

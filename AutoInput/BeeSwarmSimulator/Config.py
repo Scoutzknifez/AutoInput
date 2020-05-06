@@ -6,7 +6,7 @@ loop_count = 0
 # Conversion Statics
 CONVERSION_KEY = '2'
 converting = True
-seconds_before_convert = 3600
+seconds_before_convert = 3600 / 1.5
 convert_loop_allowance = seconds_before_convert / loop_sleep_time
 
 # Marshmallow Bee Settings
