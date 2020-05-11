@@ -8,7 +8,7 @@ SPRINKLER_KEY = '1'
 
 # Conversion Settings
 CONVERSION_KEY = '2'
-converting = True
+converting = False
 seconds_before_convert = 3600
 convert_loop_allowance = seconds_before_convert / loop_sleep_time
 
