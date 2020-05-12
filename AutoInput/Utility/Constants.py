@@ -1,3 +1,5 @@
+MAIN_FILE_LOCATION = ''
+
 HEX_DICTIONARY = {
     'space': 0x20,
     '0': 0x30,
@@ -66,5 +68,6 @@ HEX_DICTIONARY = {
 
 
 def variables_initialize():
+    global MAIN_FILE_LOCATION
     global HEX_DICTIONARY
 

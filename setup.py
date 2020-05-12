@@ -4,9 +4,9 @@ setup(
     name='AutoInput',
     version='1.0',
     packages=[''],
-    # url='https://github.com/ConnorWolanski/TeamFightTacticsBot.git',
+    url='https://github.com/Scoutzknifez/AutoInput.git',
     license='',
-    requires=['aenum', 'pyscreenshot'],
+    requires=['aenum', 'Pillow', 'pyscreenshot', 'pyautogui'],
     author='Cody Alexander',
     author_email='csalexander<at>cpp.edu',
     description=''
