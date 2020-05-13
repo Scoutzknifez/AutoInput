@@ -1,11 +1,16 @@
 import pyscreenshot as image_grab
 import pyautogui as auto_gui
+import AutoInput.Utility.Constants as Constants
+import AutoInput.Utility.Utils as Utils
 from PIL import Image, ImageOps
 
 
 # This gets a screenshot of your screen
 def get_screen():
-    screenshot_name = "Screenie/" + "screen.png"
+    screenshot_location = Constants.MAIN_FILE_LOCATION + "/runtime/captures"
+    Utils.make_directories_to_target(screenshot_location)
+
+    screenshot_name = screenshot_location + "/screen.png"
 
     image = auto_gui.grab()
     image.save(screenshot_name)
