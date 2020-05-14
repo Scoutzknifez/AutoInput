@@ -1,4 +1,5 @@
 MAIN_FILE_LOCATION = ''
+HOURS_RUNNING = 0
 
 HEX_DICTIONARY = {
     'space': 0x20,
@@ -70,4 +71,5 @@ HEX_DICTIONARY = {
 def variables_initialize():
     global MAIN_FILE_LOCATION
     global HEX_DICTIONARY
+    global HOURS_RUNNING
 

@@ -1,6 +1,6 @@
 import AutoInput.BeeSwarmSimulator.Functions as Bss
 import AutoInput.Utility.Constants as Constants
-import AutoInput.Utility.PhotoUtils as PU
+import AutoInput.Utility.PhotoUtils as PhotoUtils
 import os
 
 
@@ -9,7 +9,7 @@ def start():
         return
 
     Constants.MAIN_FILE_LOCATION = os.path.dirname(__file__)
-    PU.get_screen()
+    PhotoUtils.get_screen()
 
     Bss.not_afk()
 
