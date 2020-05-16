@@ -15,18 +15,24 @@ import AutoInput.Utility.PhotoUtils as PhotoUtils
 def not_afk():
     time.sleep(3)
 
+    time_passed = 0
+
     while True:
         Keyboard.press_and_release(Constants.HEX_DICTIONARY[BssConstants.NOT_AFK_KEY], .01)
         BssConstants.loop_count += 1
         do_conversion()
         time.sleep(BssConstants.loop_sleep_time)
 
+        time_passed += BssConstants.loop_sleep_time
+        if time_passed >= Constants.SECONDS_IN_HOUR:
+            time_passed = 0
+            PhotoUtils.get_screen()
+
 
 def do_conversion():
     if BssConstants.converting and BssConstants.loop_count > BssConstants.convert_loop_allowance:
-        PhotoUtils.get_screen()
-        # Keyboard.press_and_release(Constants.HEX_DICTIONARY[BssConstants.CONVERSION_KEY], .01)
-        # BssConstants.loop_count = 0
+        Keyboard.press_and_release(Constants.HEX_DICTIONARY[BssConstants.CONVERSION_KEY], .01)
+        BssConstants.loop_count = 0
 
 
 def do_marshmallow():
