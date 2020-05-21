@@ -72,6 +72,14 @@ def release_key(hex_key_code):
     user32.SendInput(1, ctypes.byref(x), ctypes.sizeof(x))
 
 
+def press_and_release_at_once(hex1, hex2, hold_time):
+    press_key(hex1)
+    press_key(hex2)
+    time.sleep(hold_time)
+    release_key(hex1)
+    release_key(hex2)
+
+
 def press_and_release(hex_code, hold_time):
     press_key(hex_code)
     time.sleep(hold_time)
