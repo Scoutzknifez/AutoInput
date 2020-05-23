@@ -1,6 +1,6 @@
 import AutoInput.BeeSwarmSimulator.Functions as Bss
+import AutoInput.SeaOfThieves.Functions as Sot
 import AutoInput.Utility.Constants as Constants
-import AutoInput.Utility.PhotoUtils as PhotoUtils
 import os
 
 
@@ -9,9 +9,9 @@ def start():
         return
 
     Constants.MAIN_FILE_LOCATION = os.path.dirname(__file__)
-    PhotoUtils.get_screen()
 
     Bss.not_afk()
+    # Sot.not_afk()
 
 
 start()

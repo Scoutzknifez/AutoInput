@@ -13,6 +13,7 @@ import AutoInput.Utility.PhotoUtils as PhotoUtils
 
 
 def not_afk():
+    PhotoUtils.get_screen()
     time.sleep(3)
 
     time_passed = 0
