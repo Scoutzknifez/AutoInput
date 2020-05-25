@@ -10,8 +10,8 @@ def start():
 
     Constants.MAIN_FILE_LOCATION = os.path.dirname(__file__)
 
-    Bss.not_afk()
-    # Sot.not_afk()
+    # Bss.not_afk()
+    Sot.not_afk()
 
 
 start()
