@@ -84,7 +84,6 @@ def press_and_release(hex_code, hold_time):
     press_key(hex_code)
     time.sleep(hold_time)
     release_key(hex_code)
-    time.sleep(hold_time)
 
 
 def press_and_hold(hex_code):
