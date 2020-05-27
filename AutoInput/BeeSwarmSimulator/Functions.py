@@ -25,7 +25,7 @@ def not_afk():
         time.sleep(BssConstants.loop_sleep_time)
 
         time_passed += BssConstants.loop_sleep_time
-        if time_passed >= Constants.SECONDS_IN_HOUR / 6:
+        if time_passed >= Constants.SECONDS_IN_HOUR:
             time_passed = 0
             PhotoUtils.get_screen()
 
