@@ -1,6 +1,6 @@
 # Not AFK Settings
 NOT_AFK_KEY = 'space'
-loop_sleep_time = 60
+loop_sleep_time = 15
 loop_count = 0
 
 # Sprinkler Settings
